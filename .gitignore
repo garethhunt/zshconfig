@@ -1,0 +1,5 @@
+# zsh completion dump
+.zcompdump
+
+# zsh history
+.zsh_history
