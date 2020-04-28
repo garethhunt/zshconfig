@@ -1,3 +1,7 @@
+# Prompt
+PROMPT='%F{39}%1~%f %# '
+RPROMPT='%F{2}%*%f'
+
 # Change directory without typing cd
 setopt AUTOCD
 
