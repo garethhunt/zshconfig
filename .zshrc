@@ -2,6 +2,9 @@
 PROMPT='%F{39}%1~%f %# '
 RPROMPT='%F{2}%*%f'
 
+# VIM binding
+bindkey -v
+
 # Change directory without typing cd
 setopt AUTOCD
 
