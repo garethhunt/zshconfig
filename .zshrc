@@ -5,7 +5,7 @@ bindkey -v
 KEYTIMEOUT=5
 
 # Map vim mode to var
-VIM_CMD="[cmd]"
+VIM_CMD="%B%K{11}%F{0}[cmd]%f%k%b"
 VIM_INS="[ins]"
 VIM_MODE=$VIM_INS
 
