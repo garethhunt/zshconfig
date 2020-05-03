@@ -19,6 +19,7 @@ zle -N zle-keymap-select
 
 # Prompt, with variable substition
 setopt PROMPT_SUBST
+setopt TRANSIENT_RPROMPT
 PROMPT='%F{39}%1~%f %# '
 RPROMPT='${VIM_MODE} %F{2}%*%f'
 
