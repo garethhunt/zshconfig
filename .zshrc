@@ -6,7 +6,7 @@ KEYTIMEOUT=5
 
 # Map vim mode to var
 VIM_CMD="%B%K{11}%F{0}[cmd]%f%k%b"
-VIM_INS="[ins]"
+VIM_INS="%F{11}[ins]%f"
 VIM_MODE=$VIM_INS
 
 function zle-line-init zle-keymap-select {
