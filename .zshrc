@@ -9,11 +9,12 @@ VIM_CMD="[cmd]"
 VIM_INS="[ins]"
 VIM_MODE=$VIM_INS
 
-function zle-keymap-select {
+function zle-line-init zle-keymap-select {
     VIM_MODE="${${KEYMAP/vicmd/${VIM_CMD}}/(main|viins)/${VIM_INS}}"
     zle reset-prompt
 }
 
+zle -N zle-line-init
 zle -N zle-keymap-select
 
 # Prompt, with variable substition
