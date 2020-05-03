@@ -5,10 +5,12 @@ bindkey -v
 KEYTIMEOUT=5
 
 # Map vim mode to var
-VIM_MODE="[ins]"
+VIM_CMD="[cmd]"
+VIM_INS="[ins]"
+VIM_MODE=$VIM_INS
 
 function zle-keymap-select {
-    VIM_MODE="${${KEYMAP/vicmd/[cmd]}/(main|viins)/[ins]}"
+    VIM_MODE="${${KEYMAP/vicmd/${VIM_CMD}}/(main|viins)/${VIM_INS}}"
     zle reset-prompt
 }
 
