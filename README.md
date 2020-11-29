@@ -12,8 +12,12 @@ In your home directory, edit your .zshenv directory to add ZDOTDIR environment v
 # Applications to install
 
 * https://brew.sh
-* BAT - brew install bat
-* The silver searcher - brew install the_silver_search
+* BAT - Modern alternative to the cat utility - brew install bat
+* The silver searcher - code search tool - brew install the_silver_search
+
+# Optional Applications - install when needed
+* JVM - openjdk - v11 is current LTS
+* JS runtime - Node - v14 is current LTS
 
 # TODO
 
