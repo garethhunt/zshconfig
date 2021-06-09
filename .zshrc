@@ -38,6 +38,14 @@ setopt CORRECT_ALL
 # History configuration
 #
 
+# History commands
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
+
 # Max history saved
 SAVEHIST=5000
 # Include timestamp
@@ -47,4 +55,4 @@ setopt SHARE_HISTORY
 # append to history
 setopt APPEND_HISTORY
 # expire duplicates first
-setopt HIST_EXPIRE_DUPS_FIRST 
+setopt HIST_EXPIRE_DUPS_FIRST
